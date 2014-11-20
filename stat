@@ -1,0 +1,14 @@
+stat模块描述了os.stat(filename)返回的文件属性列表中各值的意义.
+我们可方便地根据stat模块存取os.stat()中的值.
+os.stat(path)执行一个stat()系统调用在给定的path上，
+返回一个类元组对象(stat_result对象,包含10个元素),
+属性与stat结构成员相关:st_mode(权限模式),
+st_ino(inode number),
+st_dev(device),
+st_nlink(number of hard links),
+st_uid(所有用户的user id),
+st_gid(所有用户的group id),
+st_size(文件大小，以位为单位)，
+st_atime(最近访问的时间),
+st_mtime(最近修改的时间),
+st_ctime(创建的时间)
